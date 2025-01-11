@@ -9,6 +9,7 @@ on:
 
 jobs:
   deploy:
+    permissions: write-all
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
